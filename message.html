@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إرسال رسالة شكر - iTEAM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- الشعار في الزاوية -->
+    <div class="header-logo">
+        <img alt="iTEAM Logo" loading="lazy" width="200" decoding="async" src="logo.png" style="object-fit: contain;">
+    </div>
+
+    <!-- حاوية الفورم الزجاجية -->
+    <div class="form-container">
+        <h1 class="main-title" style="margin-bottom: 25px; font-size: 2rem;">إرسال رسالة شكر</h1>
+        <form id="thankYouForm">
+            <input type="text" id="senderName" placeholder="اسمك (الخريج)" required>
+            <textarea id="messageText" placeholder="اكتب رسالة الشكر للدكتور هنا..." required></textarea>
+            <button type="submit" id="submitBtn">إرسال الرسالة</button>
+        </form>
+        <a href="index.html" class="view-messages-link">الذهاب إلى لوحة الرسائل &#10094;</a>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
