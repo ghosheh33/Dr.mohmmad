@@ -34,7 +34,6 @@ function renderCarousel() {
         
         const displayName = (msg.Name && msg.Name.trim() !== "") ? msg.Name : 'خريج';
 
-        // إزالة الأيقونات والاعتماد على النص واسم المرسل فقط
         card.innerHTML = `
             <div class="message-text">
                 <p>"${msg.message}"</p>
@@ -81,13 +80,11 @@ function updateCarousel() {
     });
 }
 
-// زر اليسار يعرض الرسالة التالية
 document.getElementById('nextBtn').addEventListener('click', () => {
     currentIndex = (currentIndex + 1) % messages.length;
     updateCarousel();
 });
 
-// زر اليمين يعرض الرسالة السابقة
 document.getElementById('prevBtn').addEventListener('click', () => {
     currentIndex = (currentIndex - 1 + messages.length) % messages.length;
     updateCarousel();
